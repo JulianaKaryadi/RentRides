@@ -1,0 +1,59 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.signup-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .signup-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .signup-container label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .signup-container input[type="text"],
+    .signup-container input[type="password"],
+    .signup-container input[type="email"],
+    .signup-container input[type="tel"],
+    .signup-container select {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .signup-container input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+        .signup-container input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+.status-label {
+    text-align: center;
+    margin-top: 10px;
+    color: red;
+}

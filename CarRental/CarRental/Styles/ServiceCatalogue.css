@@ -1,0 +1,67 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.filter-container {
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+    .filter-container label,
+    .filter-container select,
+    .filter-container input {
+        margin-right: 10px;
+    }
+
+        .filter-container input[type="number"] {
+            width: 100px;
+        }
+
+        .filter-container input[type="submit"] {
+            padding: 5px 10px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+            .filter-container input[type="submit"]:hover {
+                background-color: #218838;
+            }
+
+.car-catalogue {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.car-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .car-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .car-item h3 {
+        margin: 10px 0;
+    }
+
+    .car-item p {
+        margin: 5px 0;
+    }

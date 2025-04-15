@@ -1,0 +1,64 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.booking-container {
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.booking-form, .car-details {
+    flex: 1;
+    margin: 10px;
+}
+
+    .booking-form label,
+    .booking-form select,
+    .booking-form input {
+        margin-right: 10px;
+    }
+
+        .booking-form input[type="date"] {
+            width: 150px;
+        }
+
+        .booking-form input[type="submit"] {
+            padding: 5px 10px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+            .booking-form input[type="submit"]:hover {
+                background-color: #218838;
+            }
+
+.car-details {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+    .car-details img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .car-details h3 {
+        margin: 10px 0;
+    }
+
+    .car-details p {
+        margin: 5px 0;
+    }

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-16"?>
+<DataTable>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Bookings" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Bookings">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="BookingId" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+                <xs:element name="UserId" type="xs:int" />
+                <xs:element name="CarId" type="xs:int" />
+                <xs:element name="BookingDate" type="xs:dateTime" />
+                <xs:element name="StartDate" type="xs:dateTime" />
+                <xs:element name="EndDate" type="xs:dateTime" />
+                <xs:element name="TotalCost" type="xs:decimal" />
+                <xs:element name="IsReturned" type="xs:boolean" minOccurs="0" />
+                <xs:element name="DamageCost" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Rating" type="xs:int" minOccurs="0" />
+                <xs:element name="Comment" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="2147483647" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Deposit" type="xs:decimal" />
+                <xs:element name="FinalTotalCost" type="xs:decimal" minOccurs="0" />
+                <xs:element name="FinalDeposit" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <DocumentElement>
+      <Bookings diffgr:id="Bookings1" msdata:rowOrder="0">
+        <BookingId>1</BookingId>
+        <UserId>3</UserId>
+        <CarId>10</CarId>
+        <BookingDate>2024-06-10T00:00:50.993+08:00</BookingDate>
+        <StartDate>2024-06-12T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-14T00:00:00+08:00</EndDate>
+        <TotalCost>206.60</TotalCost>
+        <Deposit>0.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings2" msdata:rowOrder="1">
+        <BookingId>2</BookingId>
+        <UserId>3</UserId>
+        <CarId>5</CarId>
+        <BookingDate>2024-06-10T00:18:54.5+08:00</BookingDate>
+        <StartDate>2024-06-13T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-18T00:00:00+08:00</EndDate>
+        <TotalCost>602.40</TotalCost>
+        <IsReturned>true</IsReturned>
+        <DamageCost>100.00</DamageCost>
+        <Rating>5</Rating>
+        <Comment>Good!</Comment>
+        <Deposit>0.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings3" msdata:rowOrder="2">
+        <BookingId>3</BookingId>
+        <UserId>3</UserId>
+        <CarId>3</CarId>
+        <BookingDate>2024-06-10T00:22:33.12+08:00</BookingDate>
+        <StartDate>2024-06-11T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-20T00:00:00+08:00</EndDate>
+        <TotalCost>50.00</TotalCost>
+        <IsReturned>true</IsReturned>
+        <DamageCost>50.00</DamageCost>
+        <Rating>2</Rating>
+        <Comment>bad</Comment>
+        <Deposit>0.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings4" msdata:rowOrder="3">
+        <BookingId>4</BookingId>
+        <UserId>3</UserId>
+        <CarId>5</CarId>
+        <BookingDate>2024-06-10T00:45:14.287+08:00</BookingDate>
+        <StartDate>2024-06-11T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-15T00:00:00+08:00</EndDate>
+        <TotalCost>200.00</TotalCost>
+        <IsReturned>true</IsReturned>
+        <DamageCost>200.00</DamageCost>
+        <Rating>4</Rating>
+        <Comment>Decent</Comment>
+        <Deposit>0.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings5" msdata:rowOrder="4">
+        <BookingId>5</BookingId>
+        <UserId>3</UserId>
+        <CarId>19</CarId>
+        <BookingDate>2024-06-10T00:50:36.75+08:00</BookingDate>
+        <StartDate>2024-06-24T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-27T00:00:00+08:00</EndDate>
+        <TotalCost>282.00</TotalCost>
+        <IsReturned>true</IsReturned>
+        <DamageCost>0.00</DamageCost>
+        <Rating>3</Rating>
+        <Comment>Okay</Comment>
+        <Deposit>0.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings6" msdata:rowOrder="5">
+        <BookingId>6</BookingId>
+        <UserId>4</UserId>
+        <CarId>75</CarId>
+        <BookingDate>2024-06-10T01:30:02.993+08:00</BookingDate>
+        <StartDate>2024-06-11T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-15T00:00:00+08:00</EndDate>
+        <TotalCost>311.00</TotalCost>
+        <IsReturned>true</IsReturned>
+        <DamageCost>0.00</DamageCost>
+        <Rating>3</Rating>
+        <Comment>good</Comment>
+        <Deposit>0.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings7" msdata:rowOrder="6">
+        <BookingId>7</BookingId>
+        <UserId>5</UserId>
+        <CarId>12</CarId>
+        <BookingDate>2024-06-10T04:15:59.37+08:00</BookingDate>
+        <StartDate>2024-07-02T00:00:00+08:00</StartDate>
+        <EndDate>2024-07-06T00:00:00+08:00</EndDate>
+        <TotalCost>300.00</TotalCost>
+        <IsReturned>true</IsReturned>
+        <DamageCost>50.00</DamageCost>
+        <Rating>5</Rating>
+        <Comment />
+        <Deposit>0.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings8" msdata:rowOrder="7">
+        <BookingId>8</BookingId>
+        <UserId>5</UserId>
+        <CarId>3</CarId>
+        <BookingDate>2024-06-10T04:20:36.54+08:00</BookingDate>
+        <StartDate>2024-07-11T00:00:00+08:00</StartDate>
+        <EndDate>2024-07-13T00:00:00+08:00</EndDate>
+        <TotalCost>165.00</TotalCost>
+        <IsReturned>true</IsReturned>
+        <DamageCost>0.00</DamageCost>
+        <Rating>5</Rating>
+        <Comment />
+        <Deposit>0.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings9" msdata:rowOrder="8">
+        <BookingId>9</BookingId>
+        <UserId>3</UserId>
+        <CarId>2</CarId>
+        <BookingDate>2024-06-10T04:26:16.583+08:00</BookingDate>
+        <StartDate>2024-08-11T00:00:00+08:00</StartDate>
+        <EndDate>2024-08-15T00:00:00+08:00</EndDate>
+        <TotalCost>550.00</TotalCost>
+        <IsReturned>true</IsReturned>
+        <DamageCost>200.00</DamageCost>
+        <Rating>1</Rating>
+        <Comment>Bad</Comment>
+        <Deposit>0.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings10" msdata:rowOrder="9">
+        <BookingId>10</BookingId>
+        <UserId>3</UserId>
+        <CarId>7</CarId>
+        <BookingDate>2024-06-10T04:26:35.103+08:00</BookingDate>
+        <StartDate>2024-08-22T00:00:00+08:00</StartDate>
+        <EndDate>2024-08-24T00:00:00+08:00</EndDate>
+        <TotalCost>0.00</TotalCost>
+        <IsReturned>true</IsReturned>
+        <DamageCost>0.00</DamageCost>
+        <Rating>0</Rating>
+        <Deposit>0.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings11" msdata:rowOrder="10">
+        <BookingId>11</BookingId>
+        <UserId>3</UserId>
+        <CarId>2</CarId>
+        <BookingDate>2024-06-11T12:03:57.533+08:00</BookingDate>
+        <StartDate>2024-06-12T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-14T00:00:00+08:00</EndDate>
+        <TotalCost>210.00</TotalCost>
+        <IsReturned>false</IsReturned>
+        <DamageCost>0.00</DamageCost>
+        <Rating>0</Rating>
+        <Deposit>0.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings12" msdata:rowOrder="11">
+        <BookingId>12</BookingId>
+        <UserId>3</UserId>
+        <CarId>2</CarId>
+        <BookingDate>2024-06-13T08:38:24.027+08:00</BookingDate>
+        <StartDate>2024-06-14T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-18T00:00:00+08:00</EndDate>
+        <TotalCost>450.00</TotalCost>
+        <IsReturned>true</IsReturned>
+        <DamageCost>100.00</DamageCost>
+        <Rating>0</Rating>
+        <Deposit>0.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings13" msdata:rowOrder="12">
+        <BookingId>13</BookingId>
+        <UserId>3</UserId>
+        <CarId>3</CarId>
+        <BookingDate>2024-06-13T08:38:24.033+08:00</BookingDate>
+        <StartDate>2024-06-14T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-18T00:00:00+08:00</EndDate>
+        <TotalCost>350.00</TotalCost>
+        <IsReturned>false</IsReturned>
+        <DamageCost>0.00</DamageCost>
+        <Rating>0</Rating>
+        <Deposit>0.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings14" msdata:rowOrder="13">
+        <BookingId>14</BookingId>
+        <UserId>3</UserId>
+        <CarId>79</CarId>
+        <BookingDate>2024-06-13T08:40:27.247+08:00</BookingDate>
+        <StartDate>2024-08-21T00:00:00+08:00</StartDate>
+        <EndDate>2024-08-24T00:00:00+08:00</EndDate>
+        <TotalCost>120.00</TotalCost>
+        <IsReturned>false</IsReturned>
+        <DamageCost>0.00</DamageCost>
+        <Rating>0</Rating>
+        <Deposit>0.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings15" msdata:rowOrder="14">
+        <BookingId>15</BookingId>
+        <UserId>3</UserId>
+        <CarId>81</CarId>
+        <BookingDate>2024-06-13T08:40:27.28+08:00</BookingDate>
+        <StartDate>2024-08-21T00:00:00+08:00</StartDate>
+        <EndDate>2024-08-24T00:00:00+08:00</EndDate>
+        <TotalCost>120.00</TotalCost>
+        <IsReturned>false</IsReturned>
+        <DamageCost>0.00</DamageCost>
+        <Rating>0</Rating>
+        <Deposit>0.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings16" msdata:rowOrder="15">
+        <BookingId>16</BookingId>
+        <UserId>3</UserId>
+        <CarId>1</CarId>
+        <BookingDate>2024-06-13T08:41:49.973+08:00</BookingDate>
+        <StartDate>2024-06-11T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-10T00:00:00+08:00</EndDate>
+        <TotalCost>0.00</TotalCost>
+        <IsReturned>false</IsReturned>
+        <DamageCost>0.00</DamageCost>
+        <Rating>0</Rating>
+        <Deposit>0.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings17" msdata:rowOrder="16">
+        <BookingId>17</BookingId>
+        <UserId>5</UserId>
+        <CarId>81</CarId>
+        <BookingDate>2024-06-15T14:13:39.807+08:00</BookingDate>
+        <StartDate>2024-06-16T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-20T00:00:00+08:00</EndDate>
+        <TotalCost>150.00</TotalCost>
+        <IsReturned>true</IsReturned>
+        <DamageCost>0.00</DamageCost>
+        <Rating>5</Rating>
+        <Comment>Nice Car!</Comment>
+        <Deposit>0.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings18" msdata:rowOrder="17">
+        <BookingId>18</BookingId>
+        <UserId>16</UserId>
+        <CarId>5</CarId>
+        <BookingDate>2024-06-15T21:54:59.83+08:00</BookingDate>
+        <StartDate>2024-06-15T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-19T00:00:00+08:00</EndDate>
+        <TotalCost>525.00</TotalCost>
+        <IsReturned>true</IsReturned>
+        <DamageCost>200.00</DamageCost>
+        <Rating>1</Rating>
+        <Comment>Bad</Comment>
+        <Deposit>0.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings19" msdata:rowOrder="18">
+        <BookingId>19</BookingId>
+        <UserId>19</UserId>
+        <CarId>21</CarId>
+        <BookingDate>2024-06-17T20:49:31.07+08:00</BookingDate>
+        <StartDate>2024-06-18T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-22T00:00:00+08:00</EndDate>
+        <TotalCost>450.00</TotalCost>
+        <IsReturned>true</IsReturned>
+        <DamageCost>100.00</DamageCost>
+        <Rating>4</Rating>
+        <Comment>Nice!</Comment>
+        <Deposit>0.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings20" msdata:rowOrder="19">
+        <BookingId>20</BookingId>
+        <UserId>5</UserId>
+        <CarId>2</CarId>
+        <BookingDate>2024-06-20T01:20:26.317+08:00</BookingDate>
+        <StartDate>2024-06-20T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-22T00:00:00+08:00</EndDate>
+        <TotalCost>160.00</TotalCost>
+        <IsReturned>true</IsReturned>
+        <DamageCost>50.00</DamageCost>
+        <Rating>0</Rating>
+        <Deposit>100.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings21" msdata:rowOrder="20">
+        <BookingId>21</BookingId>
+        <UserId>23</UserId>
+        <CarId>1</CarId>
+        <BookingDate>2024-06-20T05:26:06.81+08:00</BookingDate>
+        <StartDate>2024-06-22T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-24T00:00:00+08:00</EndDate>
+        <TotalCost>100.00</TotalCost>
+        <IsReturned>true</IsReturned>
+        <DamageCost>0.00</DamageCost>
+        <Rating>5</Rating>
+        <Comment>Good</Comment>
+        <Deposit>50.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings22" msdata:rowOrder="21">
+        <BookingId>22</BookingId>
+        <UserId>23</UserId>
+        <CarId>2</CarId>
+        <BookingDate>2024-06-20T05:27:51.957+08:00</BookingDate>
+        <StartDate>2024-06-27T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-29T00:00:00+08:00</EndDate>
+        <TotalCost>210.00</TotalCost>
+        <IsReturned>false</IsReturned>
+        <DamageCost>0.00</DamageCost>
+        <Rating>0</Rating>
+        <Deposit>100.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings23" msdata:rowOrder="22">
+        <BookingId>23</BookingId>
+        <UserId>23</UserId>
+        <CarId>1</CarId>
+        <BookingDate>2024-06-20T06:05:20.65+08:00</BookingDate>
+        <StartDate>2024-06-21T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-25T00:00:00+08:00</EndDate>
+        <TotalCost>174.00</TotalCost>
+        <IsReturned>true</IsReturned>
+        <DamageCost>50.00</DamageCost>
+        <Rating>0</Rating>
+        <Deposit>126.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings24" msdata:rowOrder="23">
+        <BookingId>24</BookingId>
+        <UserId>5</UserId>
+        <CarId>54</CarId>
+        <BookingDate>2024-06-20T06:16:09.483+08:00</BookingDate>
+        <StartDate>2024-06-21T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-25T00:00:00+08:00</EndDate>
+        <TotalCost>350.00</TotalCost>
+        <IsReturned>false</IsReturned>
+        <DamageCost>0.00</DamageCost>
+        <Rating>0</Rating>
+        <Deposit>168.40</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings25" msdata:rowOrder="24">
+        <BookingId>25</BookingId>
+        <UserId>5</UserId>
+        <CarId>76</CarId>
+        <BookingDate>2024-06-20T06:20:58.157+08:00</BookingDate>
+        <StartDate>2024-06-21T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-25T00:00:00+08:00</EndDate>
+        <TotalCost>375.00</TotalCost>
+        <IsReturned>false</IsReturned>
+        <DamageCost>0.00</DamageCost>
+        <Rating>0</Rating>
+        <Deposit>179.00</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings26" msdata:rowOrder="25">
+        <BookingId>26</BookingId>
+        <UserId>23</UserId>
+        <CarId>47</CarId>
+        <BookingDate>2024-06-20T06:31:44.617+08:00</BookingDate>
+        <StartDate>2024-06-21T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-25T00:00:00+08:00</EndDate>
+        <TotalCost>302.60</TotalCost>
+        <IsReturned>true</IsReturned>
+        <DamageCost>50.00</DamageCost>
+        <Rating>0</Rating>
+        <Deposit>168.40</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings27" msdata:rowOrder="26">
+        <BookingId>27</BookingId>
+        <UserId>23</UserId>
+        <CarId>67</CarId>
+        <BookingDate>2024-06-20T06:36:42.007+08:00</BookingDate>
+        <StartDate>2024-06-21T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-25T00:00:00+08:00</EndDate>
+        <TotalCost>252.60</TotalCost>
+        <IsReturned>true</IsReturned>
+        <DamageCost>0.00</DamageCost>
+        <Rating>0</Rating>
+        <Deposit>168.40</Deposit>
+      </Bookings>
+      <Bookings diffgr:id="Bookings28" msdata:rowOrder="27">
+        <BookingId>28</BookingId>
+        <UserId>5</UserId>
+        <CarId>82</CarId>
+        <BookingDate>2024-06-20T06:47:29.443+08:00</BookingDate>
+        <StartDate>2024-06-21T00:00:00+08:00</StartDate>
+        <EndDate>2024-06-25T00:00:00+08:00</EndDate>
+        <TotalCost>156.00</TotalCost>
+        <IsReturned>true</IsReturned>
+        <DamageCost>0.00</DamageCost>
+        <Rating>0</Rating>
+        <Deposit>62.40</Deposit>
+        <FinalTotalCost>93.60</FinalTotalCost>
+        <FinalDeposit>62.40</FinalDeposit>
+      </Bookings>
+    </DocumentElement>
+  </diffgr:diffgram>
+</DataTable>
+Generated on: 20/6/2024 7:38:11 AM

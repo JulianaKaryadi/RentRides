@@ -1,0 +1,382 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E927991-97B7-4190-83B1-384A8332860D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CarRental</RootNamespace>
+    <AssemblyName>CarRental</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44325</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\lib\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddCar.aspx" />
+    <Content Include="AdminSignUp.aspx" />
+    <Content Include="App_Data\SwiftCar.mdf" />
+    <Content Include="App_Data\SwiftCar_log.ldf">
+      <DependentUpon>SwiftCar.mdf</DependentUpon>
+    </Content>
+    <Content Include="Booking.aspx" />
+    <Content Include="CustomerFeedback.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="History.aspx" />
+    <Content Include="images\car 01.jpg" />
+    <Content Include="images\car 02.jpg" />
+    <Content Include="images\car 03.jpg" />
+    <Content Include="images\car 04.jpg" />
+    <Content Include="images\car 05.jpg" />
+    <Content Include="images\car 06.jpg" />
+    <Content Include="images\car 07.jpg" />
+    <Content Include="images\car 08.jpg" />
+    <Content Include="images\car 09.jpg" />
+    <Content Include="images\car 10.jpg" />
+    <Content Include="images\car 11.jpg" />
+    <Content Include="images\car 12.jpg" />
+    <Content Include="images\car 13.jpg" />
+    <Content Include="images\car 14.jpg" />
+    <Content Include="images\car 15.jpg" />
+    <Content Include="images\car 16.jpg" />
+    <Content Include="images\car 17.jpg" />
+    <Content Include="images\car 18.jpg" />
+    <Content Include="images\car 19.jpg" />
+    <Content Include="images\car 20.jpg" />
+    <Content Include="images\car 21.jpg" />
+    <Content Include="images\car 22.jpg" />
+    <Content Include="images\car 23.jpg" />
+    <Content Include="images\car 24.jpg" />
+    <Content Include="images\car 25.jpg" />
+    <Content Include="images\car 26.jpg" />
+    <Content Include="images\car 27.jpg" />
+    <Content Include="images\car 28.jpg" />
+    <Content Include="images\car 29.jpg" />
+    <Content Include="images\car 30.jpg" />
+    <Content Include="images\car 31.jpg" />
+    <Content Include="images\car 32.jpg" />
+    <Content Include="images\car 33.jpg" />
+    <Content Include="images\car 34.jpg" />
+    <Content Include="images\car 35.jpg" />
+    <Content Include="images\car 36.jpg" />
+    <Content Include="images\car 37.jpg" />
+    <Content Include="images\car 38.jpg" />
+    <Content Include="images\car 39.jpg" />
+    <Content Include="images\car 40.jpg" />
+    <Content Include="images\car 41.jpg" />
+    <Content Include="images\car 42.jpg" />
+    <Content Include="images\car 43.jpg" />
+    <Content Include="images\car 44.jpg" />
+    <Content Include="images\car 45.jpg" />
+    <Content Include="images\car 46.jpg" />
+    <Content Include="images\car 47.jpg" />
+    <Content Include="images\car 48.jpg" />
+    <Content Include="images\car 49.jpg" />
+    <Content Include="images\car 50.jpg" />
+    <Content Include="images\car 51.jpg" />
+    <Content Include="images\car 52.jpg" />
+    <Content Include="images\car 53.jpg" />
+    <Content Include="images\car 54.jpg" />
+    <Content Include="images\car 55.jpg" />
+    <Content Include="images\car 56.jpg" />
+    <Content Include="images\car 57.jpg" />
+    <Content Include="images\car 58.jpg" />
+    <Content Include="images\car 59.jpg" />
+    <Content Include="images\car 60.jpg" />
+    <Content Include="images\car 62.jpg" />
+    <Content Include="images\car 63.jpg" />
+    <Content Include="images\car 64.jpg" />
+    <Content Include="images\car 65.jpg" />
+    <Content Include="images\car 66.jpg" />
+    <Content Include="images\car 67.jpg" />
+    <Content Include="images\car 68.jpg" />
+    <Content Include="images\car 69.jpg" />
+    <Content Include="images\car 70.jpg" />
+    <Content Include="images\car 71.jpg" />
+    <Content Include="images\car 72.jpg" />
+    <Content Include="images\car 73.jpg" />
+    <Content Include="images\car 74.jpg" />
+    <Content Include="images\car 75.jpg" />
+    <Content Include="images\car 76.jpg" />
+    <Content Include="images\car 77.jpg" />
+    <Content Include="images\car 78.jpg" />
+    <Content Include="images\car 79.jpg" />
+    <Content Include="images\car 80.jpg" />
+    <Content Include="images\carbanner.png" />
+    <Content Include="images\carbannerr.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Returns.aspx" />
+    <Content Include="ServiceCatalogue.aspx" />
+    <Content Include="Signup.aspx" />
+    <Content Include="Styles\AddCar.css" />
+    <Content Include="Styles\AdminSignUp.css" />
+    <Content Include="Styles\Booking.css" />
+    <Content Include="Styles\CustomerFeedback.css" />
+    <Content Include="Styles\History.css" />
+    <Content Include="Styles\Login.css" />
+    <Content Include="Styles\Returns.css" />
+    <Content Include="Styles\ServiceCatalogue.css" />
+    <Content Include="Styles\SignUp.css" />
+    <Content Include="Styles\Users.css" />
+    <Content Include="Users.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adapter\EmailServiceAdapter.cs" />
+    <Compile Include="adapter\IEmailService.cs" />
+    <Compile Include="adapter\SmtpEmailService.cs" />
+    <Compile Include="AddCar.aspx.cs">
+      <DependentUpon>AddCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCar.aspx.designer.cs">
+      <DependentUpon>AddCar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSignUp.aspx.cs">
+      <DependentUpon>AdminSignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSignUp.aspx.designer.cs">
+      <DependentUpon>AdminSignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Booking.aspx.cs">
+      <DependentUpon>Booking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Booking.aspx.designer.cs">
+      <DependentUpon>Booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Booking.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="builder\CarInsertQueryBuilder.cs" />
+    <Compile Include="chain\CarBrandValidator.cs" />
+    <Compile Include="chain\CarDetailValidator.cs" />
+    <Compile Include="chain\CarRateValidator.cs" />
+    <Compile Include="chain\CarYearValidator.cs" />
+    <Compile Include="command\BookingManager.cs" />
+    <Compile Include="command\BookingService.cs" />
+    <Compile Include="composite\CarComponent.cs" />
+    <Compile Include="composite\CarComposite.cs" />
+    <Compile Include="composite\ICarComponent.cs" />
+    <Compile Include="decorator\ReportDecorator.cs" />
+    <Compile Include="decorator\TimestampDecorator.cs" />
+    <Compile Include="facade\DatabaseFacade.cs" />
+    <Compile Include="factories\DeleteCommandFactory.cs" />
+    <Compile Include="factories\ISqlCommandFactory.cs" />
+    <Compile Include="factories\SelectCommandFactory.cs" />
+    <Compile Include="factories\UpdateCommandFactory.cs" />
+    <Compile Include="flyweight\CarFlyweight.cs" />
+    <Compile Include="flyweight\CarFlyweightFactory.cs" />
+    <Compile Include="interpreter\BrandExpression.cs" />
+    <Compile Include="interpreter\CarFilterContext.cs" />
+    <Compile Include="command\CreateBookingCommand.cs" />
+    <Compile Include="CustNav.Master.cs">
+      <DependentUpon>CustNav.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustNav.Master.designer.cs">
+      <DependentUpon>CustNav.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerFeedback.aspx.cs">
+      <DependentUpon>CustomerFeedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerFeedback.aspx.designer.cs">
+      <DependentUpon>CustomerFeedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomException.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="History.aspx.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="History.aspx.designer.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="command\ICommand.cs" />
+    <Compile Include="interpreter\IExpression.cs" />
+    <Compile Include="iterator\UserAccountCollection.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mediator\ISignUpMediator.cs" />
+    <Compile Include="mediator\SignUpMediator.cs" />
+    <Compile Include="observer\BookingObserver.cs" />
+    <Compile Include="observer\BookingSubject.cs" />
+    <Compile Include="observer\IObserver.cs" />
+    <Compile Include="observer\ISubject.cs" />
+    <Compile Include="PBKDF2Hash.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="interpreter\RateExpression.cs" />
+    <Compile Include="proxy\IReportAccess.cs" />
+    <Compile Include="proxy\ReportAccessProxy.cs" />
+    <Compile Include="repositories\BookingRepository.cs" />
+    <Compile Include="repositories\IRepository.cs" />
+    <Compile Include="Returns.aspx.cs">
+      <DependentUpon>Returns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Returns.aspx.designer.cs">
+      <DependentUpon>Returns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="interpreter\SeatsExpression.cs" />
+    <Compile Include="ServiceCatalogue.aspx.cs">
+      <DependentUpon>ServiceCatalogue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceCatalogue.aspx.designer.cs">
+      <DependentUpon>ServiceCatalogue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.aspx.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signup.aspx.designer.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="state\DisabledState.cs" />
+    <Compile Include="state\EnabledState.cs" />
+    <Compile Include="state\UserAccountState.cs" />
+    <Compile Include="strategies\CsvReportStrategy.cs" />
+    <Compile Include="strategies\IReportStrategy.cs" />
+    <Compile Include="strategies\JsonReportStrategy.cs" />
+    <Compile Include="strategies\XmlReportStrategy.cs" />
+    <Compile Include="template\CarAdderTemplate.cs" />
+    <Compile Include="Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CustNav.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55175</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44325/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

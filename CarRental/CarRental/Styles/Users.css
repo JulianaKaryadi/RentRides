@@ -1,0 +1,47 @@
+﻿.container {
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.gridview {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .gridview th, .gridview td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .gridview th {
+        background-color: #f2f2f2;
+    }
+
+    .gridview tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .gridview tr:hover {
+        background-color: #f1f1f1;
+    }
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
